@@ -1,0 +1,26 @@
+{
+  "name": "mobx-demo",
+  "version": "1.0.0",
+  "description": "Practicing mobx state management api from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilalsaeed232/mobx-demo.git"
+  },
+  "keywords": [
+    "mobx",
+    "javascript",
+    "reactjs",
+    "state",
+    "reactive"
+  ],
+  "author": "Bilal Saeed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bilalsaeed232/mobx-demo/issues"
+  },
+  "homepage": "https://github.com/bilalsaeed232/mobx-demo#readme"
+}
