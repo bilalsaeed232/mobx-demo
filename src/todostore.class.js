@@ -1,13 +1,19 @@
-class TodoStore {
+import { observable, computed, autorun } from "mobx";
+
+export class TodoStore {
+  @observable todos = [];
+
   constructor() {
-    this.todos = [];
+    autorun(() => console.log(this.report));
   }
 
+  @computed
   get completedTodosCount() {
     return this.todos.filter(todo => todo.completed === true).length;
   }
 
-  report() {
+  @computed
+  get report() {
     if (this.todos.length === 0) {
       return "<none>";
     }
@@ -25,5 +31,3 @@ class TodoStore {
     });
   }
 }
-
-module.exports = TodoStore;
